@@ -120,11 +120,13 @@
     <div id="container">
         <img src="https://img.icons8.com/color/96/000000/red-envelope.png" class="stamp">
         <h2 class="gold-text">🎉 小红包来喽 🎉</h2>
+        
         <div id="result">点击下方按钮获取红包</div>
         <button onclick="generateRandom()">
             <span style="font-size:24px">🧧</span> 立即开红包 <span style="font-size:24px">💰</span>
         </button>
         <div id="timestamp"></div>
+        <h3 class="gold-text">请将红包截图交由鲈鱼兑换</h3>
     </div>
 
     <script>
@@ -135,7 +137,7 @@
 
             // 生成随机数
             const min = 19;
-            const max = 100;
+            const max = 80;
             const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
             
             // 显示结果
